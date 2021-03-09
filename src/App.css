@@ -4,17 +4,24 @@
   box-sizing: border-box;
 }
 
+@keyframes become {
+  from {opacity: 0%}
+  to {opacity: 100%}
+}
+
 .headContainer {
   background-color: cornflowerblue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 6rem;
+  height: 15vh;
   padding: 0 4vw;
   font-family: 'Oswald', sans-serif;
+  /* animation-name: become;
+  animation-duration: 1s; */
 }
 .headContainer h1 {
   margin: auto 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .headContainer nav {
   grid-column: 2/-1;
@@ -25,8 +32,24 @@
   justify-content: flex-end;
   height: 100%;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .headContainer nav ul li {
   padding: 0 2vw;
+}
+
+main {
+  height: 77vh;
+  background-color: rgb(21, 42, 110);
+  padding: 2rem 6vw;
+  font-size: 1.8rem;
+  color: gainsboro;
+}
+
+footer {
+  height: 8vh;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

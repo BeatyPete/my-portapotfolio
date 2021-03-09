@@ -3,7 +3,11 @@ import React from "react";
 function Project() {
     
   return (
-      <h3>PRjects</h3>
+    <main className="project-container">
+      <section>
+        <h2>The Bookfast Club</h2>
+      </section>
+    </main>
   );
 }
 

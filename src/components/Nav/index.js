@@ -1,21 +1,37 @@
 import React from "react";
 
-function Nav() {
-    
+function Nav(props) {
+    const {
+        sectionSelected,
+        setSectionSelected
+    } = props;
+
   return (
       <nav>
           <ul>
               <li>
-                  <a>About Me</a>
+                  <a 
+                    onClick={() => setSectionSelected("About")}
+                    className={`${sectionSelected === 'About' && 'nav-active'}`}
+                  >About Me</a>
               </li>
               <li>
-                  <a>Portfolio</a>
+                  <a 
+                  onClick={() => setSectionSelected("Project")}
+                  className={`${sectionSelected === 'Project' && 'nav-active'}`}
+                  >Portfolio</a>
               </li>
               <li>
-                  <a>Contact</a>
+                  <a 
+                  onClick={() => setSectionSelected("Contact")}
+                  className={`${sectionSelected === 'Contact' && 'nav-active'}`}
+                  >Contact</a>
               </li>
               <li>
-                  <a>Resume</a>
+                  <a 
+                  onClick={() => setSectionSelected("Resume")}
+                  className={`${sectionSelected === 'Resume' && 'nav-active'}`}
+                  >Resume</a>
               </li>
           </ul>
       </nav>

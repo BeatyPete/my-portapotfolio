@@ -1,12 +1,17 @@
 import React from "react";
 import Nav from '../Nav';
 
-function Header() {
+function Header(props) {
+  const {
+    sectionSelected,
+    setSectionSelected
+  } = props;
 
   return (
     <header className="headContainer">
       <h1>Lernantino</h1>
-      <Nav />
+      <Nav sectionSelected={sectionSelected} 
+      setSectionSelected={setSectionSelected}/>
     </header>
   );
 }

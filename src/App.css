@@ -11,6 +11,7 @@ body {
   from {opacity: 0%}
   to {opacity: 100%}
 }
+
 @keyframes grow {
   to {width: 100%}
 }
@@ -51,8 +52,8 @@ main {
   padding: 2rem 6vw;
   font-size: 1.8rem;
   color: gainsboro;
-  animation-name: become;
-  animation-duration: 1s;
+  /* animation-name: become;
+  animation-duration: 1s; */
 }
 
 .project-container {
@@ -83,6 +84,10 @@ main {
   width: 100%;
   border-radius: 10%;
   align-items: flex-start;
+}
+.hidden {
+  opacity: 0%;
+  visibility: hidden;
 }
 
 footer {

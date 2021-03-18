@@ -8,7 +8,7 @@ body {
 }
 
 @keyframes become {
-  from {opacity: 0%}
+  from {visibility: hidden}
   to {opacity: 100%}
 }
 
@@ -52,43 +52,30 @@ main {
   padding: 2rem 6vw;
   font-size: 1.8rem;
   color: gainsboro;
-  /* animation-name: become;
-  animation-duration: 1s; */
 }
 
 .project-container {
-  width: 40vw;
-  margin: auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 .project-container section {
-  display: flex; 
+  
 }
-.project-container section:nth-child(2) {
-  justify-content: flex-end;
+.big-proj{
+  grid-row: span 2;
+  grid-column: span 2;
+  background-size: cover;
 }
-.project-container section div{
-  background-color: goldenrod;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
-  text-align: center;
-  min-width: 15rem;
-  min-height: 15rem;
-  display: flex;
-  ALIGN-ITEMS: center;
-  transition: ease-in-out 1s;
-  padding: 1rem;
+#book {
+  background-image: url(/src/assets/images/bookfast-club.png);
 }
-.project-container section div:hover{
-  height: 30vw;
-  width: 100%;
-  border-radius: 10%;
-  align-items: flex-start;
+#movie {
+  background-image: url(/src/assets/images/moviehub.png);
 }
-.hidden {
-  opacity: 0%;
-  visibility: hidden;
-}
+
 
 footer {
   height: 8vh;

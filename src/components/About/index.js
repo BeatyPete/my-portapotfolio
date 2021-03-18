@@ -1,5 +1,4 @@
 import React from 'react';
-import { CSSTransitionGroup } from 'react-transition-group'
 import { motion } from "framer-motion"
 
 function About() {
